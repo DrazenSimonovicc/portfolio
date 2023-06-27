@@ -2,11 +2,20 @@ import React from "react";
 import "./PortfolioStyle.css";
 
 const AboutMe = (props) => {
+  const handleDownload = () => {
+    const fileUrl = require("../CV Drazen.pdf");
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "cv.pdf";
+    link.click();
+  };
+
   return (
     <div>
       <div className="top-section">
         <p className="about-subheading">
-        {props.hi}<span>{props.name}</span>
+          {props.hi}
+          <span>{props.name}</span>
         </p>
         <h2 className="about-heading">{props.title}</h2>
         <div className="cv-flex">
@@ -14,7 +23,9 @@ const AboutMe = (props) => {
             <div className="about-info">
               <p>{props.text}</p>
             </div>
-            <button className="btn">Download CV</button>
+            <a href="#" className="btn" onClick={handleDownload}>
+              Download CV
+            </a>
           </div>
           <div className="right-section">
             <img src={props.img} alt="aboutimage" />
