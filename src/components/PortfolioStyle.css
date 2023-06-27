@@ -1,0 +1,102 @@
+.container {
+  padding: 64px 0 32px 0;
+}
+.cv-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 48px;
+}
+.left-section {
+  flex: 3;
+}
+.right-section {
+  flex: 2;
+}
+.right-section img {
+  border: 2px solid #fff;
+  width: 100%;
+}
+.about-info {
+  margin-bottom: 64px;
+}
+.about-subheading {
+  font-size: 34px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+span {
+  color: rgb(248, 217, 15);
+  padding: 8px;
+}
+.about-heading {
+  font-size: 55px;
+  margin-bottom: 48px;
+  color: #fff;
+  text-align: center;
+}
+.education-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.about-info-items {
+  padding: 64px 0 32px 0;
+  margin: 48px;
+}
+.about-info-item h4 {
+  font-size: 32px;
+  margin: 32px 0;
+  color: rgb(248, 217, 15);
+}
+.about-info-item h5 {
+  color: #fff;
+  font-size: 18px;
+  width: 200px;
+  margin: 16px 0;
+}
+.about-info-item p {
+  background-color: #777;
+  padding: 8px;
+  border-radius: 4px;
+}
+.skill {
+  cursor: pointer;
+  background-color: #777;
+  color: #fff;
+  margin-right: 12px;
+}
+.skill:hover {
+  background-color: rgb(248, 217, 15);
+}
+.skill-box {
+  display: flex;
+}
+@media screen and (max-width: 850px) {
+  .cv-flex {
+    flex-direction: column-reverse;
+  }
+  .skill-box {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .skill {
+    text-align: center;
+  }
+  .about-info-item p {
+    margin-bottom: 12px;
+  }
+}
